@@ -1,9 +1,9 @@
-// Fade-in on load
+// Fade-in when page loads
 window.addEventListener("load", () => {
     document.body.classList.add("loaded");
 });
 
-// Fade-out on link click
+// Fade-out when clicking navigation links
 document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll("a");
 
