@@ -142,3 +142,27 @@ button:hover {
     margin-top: 3px;
     letter-spacing: 1px;
 }
+
+/* ---------- TEAM PAGE ---------- */
+.team-card {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.team-photo {
+    width: 180px;
+    height: 180px;
+    background: #ddd;
+    border-radius: 16px;
+    border: 2px dashed #bbb;
+    flex-shrink: 0;
+}
+
+.team-info h2 {
+    margin-bottom: 8px;
+}
+
+.team-info p {
+    font-size: 16px;
+}
