@@ -19,3 +19,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("a").forEach(link => {
+        if (link.href.includes(".html")) {
+            link.addEventListener("click", e => {
+                e.preventDefault();
+                document.body.style.opacity = 0;
+                setTimeout(() => {
+                    window.location = link.href;
+                }, 400);
+            });
+        }
+    });
+});
