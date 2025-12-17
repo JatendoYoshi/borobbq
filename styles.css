@@ -207,3 +207,28 @@ button:hover {
     font-size: 16px;
 }
 
+/* ---------- HONOURABLE MENTIONS ---------- */
+.mention-card {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.mention-photo {
+    width: 160px;
+    height: 160px;              
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    border: 2px solid #ddd;
+    flex-shrink: 0;
+}
+
+.mention-info h2 {
+    margin-bottom: 8px;
+}
+
+.mention-info p {
+    font-size: 16px;
+}
