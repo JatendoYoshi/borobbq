@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #111;
+  color: white;
+}
+
+/* ===== HOME PAGE ===== */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+.button-container {
+  display: flex;
+  gap: 30px;
+}
+
+button {
+  padding: 25px 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: #fbc02d;
+  color: #000;
+}
+
+button:hover {
+  background: #ffd54f;
+}
+
+/* ===== CUSTOMER SCREEN ===== */
+.customer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.column {
+  padding: 20px;
+}
+
+.column h2 {
+  text-align: center;
+  border-bottom: 3px solid white;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.order {
+  font-size: clamp(32px, 5vw, 64px);
+  margin: 10px 0;
+}
+
+/* ===== STAFF SCREEN ===== */
+.staff {
+  padding: 20px;
+}
+
+.staff .order {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
